@@ -1,0 +1,12 @@
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /                         --> moments.life/http.WhoAmI (3 handlers)
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :9001
+[GIN] 2022/01/06 - 17:50:10 | 200 |     226.777µs |       127.0.0.1 | GET      "/"
+[GIN] 2022/01/06 - 17:50:11 | 404 |         582ns |       127.0.0.1 | GET      "/favicon.ico"
