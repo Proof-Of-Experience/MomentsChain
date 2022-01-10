@@ -1,0 +1,284 @@
+\documentclass[a4paper]{article}
+
+%% Language and font encodings
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+
+%% Sets page size and margins
+\usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+%% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{makecell}
+
+%% indentation
+\usepackage{indentfirst}
+
+\title{"Moments" with "Proof of Experience": A decentralized consensus protocol for a social blockchain for photo sharing }
+\author{Abdullah Khan Zehady}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Moments is a decentralized moment (photo, short video) sharing app that is designed to eliminate user targeted ad-based revenue model, to ensure a relationship between creators and viewers with transparent platform moderation and to encourage content curation and publication by rewarding users with Moment coin. MomentCoin(MCC) is the unit currency in the Moment app that is generated in a periodic interval by the miner nodes in the decentralized blockChain named "MomentsChain". MomentsChain uses Proof of Experience via Engagement (POEE) to ensure miner nodes are invested in the chain through their engagement, contribution, social experiences and approved coins. Miner nodes in the MomentsChain network are responsible to produce blocks containing social transactions with real social contents and MomentCoin(MCC) is rewarded to the block producing node for the computational power contributed to the chain security. Miners are elected through a combined process of the users' approval, direct delegation of coins and engagement based reputation and experience scores. Moment follows similar reward model and token based economy used in the new blockchain based social content platforms. Moment engineers has recognized that the new reward based content economy lead to selfish activities, bot-driven fake engagements in the platforms that hurt real engagement and growth of quality contents and users. Therefore, Moment envisions to distinguish itself by also creating rigorous non-monetary quality metrics to rank contents and moment users and influencers to deincentivize unhealthy activities. Moment hopes to encourage users to engage in a meaningful way and also promises to provide a pathway for unwealthy creators to earn reputation and Momentcoin as rewards by contributing their valuable contents, comments a.k.a attention and social experience. Moments will be very restrictive to create unique human user base with the cost of an initial compromise of identity and privacy, an organic growth of original contents, a psychologically healthy usage of online social platform by creating rules to reduce fake, spammy, bot activities. In its core principal, moments want quality human engagement to provide better moment sharing experience. Moment is trying to solve the problem of low quality content, low effort for quick gains, lack of real engagement in a token based content economy by enforcing rules that increase engagements and human communication.
+
+\end{abstract}
+
+\section{Introduction}
+    Social networks enable users to post contents in the form of texts, images and videos and create a platform where users engage, interact and communicate with each other. Users join and stay active on a social network primarily for the social experience they enjoy. A social platform like facebook, instagram is called centralized because they store the published content on centralized servers and have full control over the access and sharing of user uploaded contents. Users typically give up the ownership of the contents and solely rely on the platform's service or provision throughout the lifetime of the content they originally created. In the worst case, contents can be forever deleted by the platform without the permission of the original content creator. We have seen the rise of unwanted censorship, violation of freedom of speech, freedom of expression, threat of channel removal or revenue reduction via aggressive banning, content suppression based on non-transparent socio-political bias of the CEOs, content moderation teams, online editorial boards from these centralized social networks. These big data platforms collect data from users by providing user experience through their frontend but keep users in the dark how they use users' data to create algorithms to target users. In the end, the promised social experience of users are harmed. On the other hand, the majority of users can never really monetize their contents even when they are giving up their original content, personal preference data everyday. Because of the ad based revenue model, centralized social networks are bound to primarily please and serve the advertisers and keeping the interest of its own users second. Social network companies use their own users as the product by devising algorithm to attract attention through psychological manipulation. Therefore, we envision to create a new kind of social network where the power is in the hand of network node leaders, content creators and curators and contributors. A decentralized social network can be powered by decentralized storage alternatives, peer-to-peer file sharing system and self-hosting solutions and can reduce the burden of content hosting for the platform and therefore eliminates the need for advertisers as the funding mechanism to run the platform. 
+\section{A brief History behind Social Blockchain}    
+    Bitcoin has proven that a decentralized network of nodes over the internet can maintain a trusted registry of transaction history and can transfer monetary value without the help of traditional banking network. Ethereum and other successor cryptocurrencies have shown that complex financial contracts can also be implemented on the blockchain without the requirement of trusted third party financial organizations. Eventually we have seen the rise of the decentralized finance (DeFi) tokens, decentralized lending protocols, blockchain based credit cards (blockfi), decentralized exchanges (uniswap, sushiswap etc.). Steemit and Steem chain have followed the blockchain revolution by introducing social blockchain where social content viewership and user engagement data are stored as transactions in the block. Steem blockchain was created with three basic principals - a) content contribution should receive content ownership b) contribution of scarce time and attention are as valuable as cash contribution (sweat equity principle) c) community should serve its own members rather than serve outside entities and financial interest. Steemit has seen great success since 2016 until it's decentralization has been threatened by the acquisition of a centralized entity named Steemit Inc. As a result, an independent fork of the Steem blockchain named Hive was born. Hive blog has since seen its ecosystem grow rapidly. Various dapps like dtube (decentralized video), Leo Finance, ecency etc. have been developed on top of Hive blockchain. Dtube has definitely been one of the most promising dapp on Hive ecosystem as it promised a decentralized alternative to video platforms such as Youtube, Vimeo etc. Dtube later decided to create its own chain named Avalon with native currency named DTC. Avalon followed a simple Voting Power (VP) based DTC coin generation compared to the three assets on Hive/Steem blockchain: 1. Steem/Hive 2. Steem Power(SP)/Hive Power(HP) 3. Steem dollar(SBD)/Hive Dollar(HBD). Steem/Hive restricts users by forcing them to commit Steem/Hive to a thirteen week vesting schedule. This vesting mechanism was introduced to ensure users don't quickly dump their earned coin and stay engaged in the platform. However, Avalon blockchain on dtube has avoided this restriction to provide user flexibility. Both Hive and Avalon face various challenges in terms of quality curation and proper evaluation of users' subjective contribution through their blogs and video contents. Moments is an attempt to fill the gap by creating a decentralized photo, moments sharing mobile app as an alternative to centralized platforms like Instagram and Tiktok. Moments blockchain will employ a modified version of social economy by initially forking dtube's Avalon blockchain. Unlike Avalon, MomentsChain will create a metric that will purely reflect content quality and user reputation by separating monetary reward and non-monetary appraisal, user satisfaction. 
+    \par This table below shows some decentralized social media alternative to the centralized platforms. 
+    
+    \begin{center}
+    \begin{tabular}{|c|c|}
+        \hline
+        \textbf{Centralized platform} & \textbf{Decentralized Alternative} \\ \hline 
+        Facebook &  Diaspora, MeWe\\ \hline
+        Youtube & LBRY, D.Tube, PeerTube, Bittube, Ecency \\ \hline
+        Reddit & Aether \\ \hline
+        Instagram & Karma \\ \hline
+        WhatsApp & Signal \\ \hline
+    \end{tabular}
+    \end{center}
+
+\newpage
+\section{What goals Moments want to accomplish?}
+
+\begin{itemize}
+    \item \textbf{Transparency on the working of the algorithm via open-source code.} This will mean anyone with programming knowledge can check how the feeds are generated, how the token economy is implemented and what changes are being employed through pull requests and merging by the core developers based on the suggestions from the community.
+    \item \textbf{Fully decentralized governance and democratic decision making}. No central authority to solely decide on the protocol parameters, dictate the rules.
+    \item \textbf{No advertisement and fair reward system for user contribution}. Protocol will have mechanism to determine users' subjective contribution to the platform. Disrupting ad based revenue model and create direct relationship between creators and viewers.  Reduce centralized censorship, transparency via community rule based content moderation
+    \item \textbf{Non-allowance of non-human bot activities}. Moderation techniques will be employed to punish bot activities, abusive voting that hurt the platform.
+    \item \textbf{Decentralized file storage and potentially user-siloed data using IPFS or similar p2p technologies}. Content platform cost reduction and promotion of decentralized peer to peer content storage solution with IPFS, BTFS, Sia chain protocol.
+\end{itemize}
+We use social media primarily because we like social engagements. Our modern life can often turn into a boring activity streams that do not make us feel good and often infact make us feel subjugated. One may feel burdened with the regular routine obligations one have in his or her job. One may want to find new hobbies to pursue, new location to travel, new friends to hang out with, new fashion style to incorporate, new suggestions to read books, to listen music, to buy products. Typically, before online social media existed, a person would seek recommendations from his small friend circles in real life, meet new people in coffeeshops or libraries or malls and potentially expand their friend circles. With the advent of internet and digital connection, Facebook, Instagram and similar social sites have successfully created a new paradigm over the last 30 years where an individual user with a social account can now connect with another user anywhere in the world via internet regardless of their geographic location. Therefore, new kind of online relathionship, friendship, social engamgenets can be formed over the internet. However, this ability to connect quickly and communicate with an internet stranger also gave birth to new problems as it is not easy to trust someone in an online relationship without physically meeting and bonding with someone or without knowing detailed information about an online entity. We can look at Amazon as a platform for selling online goods where they try to solve the trust factor of a product with product review systems. Even in that case, we see fake reviews created by parties with vested interest to mislead people for monetary gains. On online social networks like facebook, instagram, the site shows the connectedness, followership, prior content postings and engagements of a new friend, online acquaintance to help understand an individual and his or her intention. There are websites like meetup, facebook groups, eventbrite which were created to actually make people reliably meet based on common interest too. But it is not very uncommon to hear how fraudulent activities by fake accounts happen everyday. Regular online users are often targeted by scammers who try to steal identity, money and destroy the trust by creating frustration. Online social media can also be used by powerful entitites, extremist groups, authoritarian governments, criminal groups to recruit naive people, spread misinformation for their bad agenda. We can therefore see that there is possibly a need for centralized platform authority to have the power to moderate users' activities for the sake of the health of a platform. Traditionally above mentioned centralized platforms have the complete control over the user created activity data. Now the question arises whether the trust that people bestow upon these social media companies is well deserved, whether free speech violation is happening, whether algorithmic manipulation or experimentation to psychologically control population is happening without consent. During election season, Facebook has sold user data to Cambridge Analytica, often didn't take proper steps to stop spread propaganda. Algorithms created to stop hate speech, fact checking fake news produce a lot of false positive and suppress individual content creators. Twitter has suspended many accounts including President Trump that infuriated right wing groups. Even though some of these suspensions can be justified as they were deemed necessary to stop violence, the power in the hand of a single central entity to censor voice of individuals, organization are constantly being questioned. In one hand, users' \textit{subjective contribution }, reputation need to be assessed to generate good feeds for a healthy platform, but on the other hand the moderation techniques, algorithms controlled under closed source code, socio-politically biased CEOs, community moderators create censorship issue. On top of that, when social media company are primarily motivated by profits from advertising and not sharing revenues that users generate for them, crypto enthusiasts had to envision decentralized platforms where users can be brought back to the center of a content platform. What we can learn from the history of bad actions by the centralized social media companies and also the recent successful advance of bitcoin and other cryptocurrency is that we do not always need trusted middleman or central mediating authority to establish trust, we need more transparency in the policy making and governance algorithm and moderation rules. We can conclude that trust is required for users to engage in a platform with each other but decentralized social media can provide similar social experience by eliminating the need for centralized decision making.
+\par Moments want to create a platform with full \textbf{transparency, no ad-targeting, openly visible moderation mechanism by democratically elected moderators} and \textbf{reward users for their attention and subjective contribution } that enrich the platform. If we look at the attention economy cycle - a) account creation b) user interaction via engagement (reactions, likes, comments, votes) c) original content production/generation/publication d) cross content posting via sharing e) marketing strategy for the growth of viewership, followership f) maximization of monetary rewards, badge collection or non monetary gains such as reputation/rank  
+
+\section{Challenges in social blockchains and decentralization}
+ List of potential community-breaking abuses:
+ \begin{enumerate}
+     \item Self-voting whales (haejin)
+     \item Bid-bots (selling votes)
+     \item Multi accounts voting (cartoons)
+     \item Curation trails (bots auto-voting tags or authors)
+ \end{enumerate}
+
+   1. lack of downvoting
+   2. No incentive for upvoting (help newer users)
+   3. No incentive for downranking/downvoting bad contents
+  Reaction + quality score
+  
+  Problem of Single token based or voting power based upvote/downvote:
+  
+  Problem of self-voting:
+     - No incentive for upvoting fellow creators
+     
+  Downvoting abuse
+  Low effort post + milking with High VP (
+  
+
+\subsection{Social reputation and penalty rules}
+Penalty by coin burn for 
+  1. Spamming
+  2. Fake account
+  3. Bullying
+  4. Reporting
+  5. Bot activity
+  
+
+
+\section{Social Transactions for social engagements}
+what are social transactions
+ - social reactions 
+ - upvote/downvote
+ - comments
+ - sharing
+
+engagement metric
+    1. Engagement time per content (elapsed time, interaction time)
+    2. Number of comments
+    3. Number of views
+    4. 
+
+
+
+\section{Moment - a single/unit content}
+\subsection{Presentation principles/techniques}
+Goal is to increase engagement and get meaningful content quality metric from the viewers
+Intention is to change the pattern of mindless behaviors shown in existing social platforms.
+\begin{enumerate}
+    \item Reduce content consumption (No sliding over multiple content, fast mindless swiping)
+    \item Increase engagement, attention per content (increase number of clicks per content)
+    \item Content page
+        \begin{itemize}
+            \item Page 1 - Show content and start collecting engagement time (Reaction button appears after 3 seconds of content consumption)
+            \item Page 2 - Ask for reactions, tags and request for comments
+            \item Page 3 - Show all comments
+            \item Page 4 - Request to share content
+            \item Skip button in page 1 (skip comes with penalty)
+            \item Move to next content..
+        \end{itemize}
+\end{enumerate}
+
+\section{Blockchain basics}
+\subsection{Collaboration Energy}
+
+\subsection{Reactions and Voting}
+principles: no self-vote
+Clapping + Rea
+
+3 buttons:
+Clap, React, Report
+
+Existing social 
+
+Medium uses clapping
+
+Clap and react are interdependent
+
+
+Reporting reasons:
+\begin{enumerate}
+1. Breaks community rules 2. Harassment or bullying, Violent or repulsive content
+3. Harmful or dangerous acts 4. Threatening violence 5. Hate (Hateful or abusive content)
+6. Sexual content 7. Sexualization of minors (Child abuse) 8. Pornography + Involuntary pornography
+9. Sharing personal information 10.Prohibited transaction
+11. Impersonation 12. Copyright violation 13. Trademark violation
+14. NetzDG report 15. Self-harm or suicide 16. Spam or misleading
+17. Misinformation 18. Infringes my rights 19. Captions issue
+\end{enumerate}
+
+
+\subsection{Ranking of Moments}
+
+\subsubsection{User reputation}
+
+\subsubsection{Content reputation}
+
+\subsubsection{Personalized content feed}
+Collab filter netflix movie recommendation
+
+
+    
+\section{MomentChain: A social blockchain}
+purpose of a new social chain:
+1. No chain to capture content quality - hive/steam chain are based on the idea that curators will be voting based on the content quality, however, it's easy to see that there can be unproductive, harmful monetary incentive. 
+   Example: turns out to be a profit maximization scheme and target for bot attacks: 
+   1. voting without watching content, because the more you vote, the better your chances are to earn more. 
+   2. You only vote popular creators, because then the chances of earning is higher 
+2. 
+
+decentralized identity
+
+
+
+decentralized blockchain that helps 
+
+no ad
+open source code
+
+
+    
+experience score
+
+
+proof of human
+
+
+A feedback loop system (for reputation score, bot detection, human identity, good engagement)
+
+EES (Experience and engagement score)
+  1. Unique, human identity
+ 
+\begin{center}
+\begin{tabular}{|c|c|c|}
+ \hline
+ Moment & Steem & Avalon \\ \hline
+    A single liquid token 
+    & 
+    A single liquid token 
+    &
+    \makecell{3 currencies:\\
+        1. Steem Power: a staked asset that\\ releases in 1/13th for 13 weeks. \\
+        2. Steem Dollar: a token pegged on\\ US Dollar, but which actually \\ 
+        isn’t really pegged \\
+        3. Steem: a normal token you can\\ actually sell on the markets, but \\
+        it gives you no power on\\ the network to hold it} \\ \hline  
+        
+    \makecell{Infinite monetization of contents\\ through time} 
+    &
+    \makecell{A content can be monetized\\ 7 days only} 
+    & 
+    \makecell{Infinite monetization of contents\\ through time} \\ \hline
+    \makecell{No cap to voting power,\\ but voting power is earned\\ based on the previous\\ day of engagement, \\ voting power is disabled\\ for 3 weeks \\based on negative reports} 
+    &
+    \makecell{Your voting power caps after\\ 2-5 days of inactivity.} 
+    & 
+    \makecell{No cap to voting power,\\ it keeps stacking up.}\\ \hline
+    \makecell{Daily limit of voting posts is 360\\ (assumption: 60 posts\\ per hour * 6 hours)} 
+    &
+    \makecell{No limit on total number of\\ daily content votes} 
+    & 
+    \makecell{No limit on total number of\\ daily content votes}\\ \hline
+    \makecell{You can only spend max 5\% \\ of your actual VP in 1 vote} 
+    &
+    \makecell{You can only spend max 2\% \\ of your actual VP in 1 vote} 
+    & 
+    \makecell{You can spend 100\% of your \\VP in 1 vote}\\ \hline
+    \makecell{Dynamic inflation scaling based\\ on active userbase,\\ but with an upper limit} 
+    &
+    \makecell{Fixed pre-determined inflation,\\ not scaling with userbase} 
+    & 
+    \makecell{Dynamic inflation scaling based\\ on active userbase}\\ \hline
+    \makecell{One human max 5 account. \\Instant account access upon\\ submission of proof of\\ unique human,\\ but fraud, non-unique\\ accounts can be frozen} 
+    &
+    \makecell{Takes weeks for a free account paid\\ by SteemIt Inc. Forced to burn\\ STEEM otherwise.} 
+    & 
+    \makecell{Instant account creation. \\Used to be Free if no\\ username. Burn tokens \\to reserve usernames.}\\ \hline
+    \makecell{No need to stake\\ your asset, but have a choice to\\ stake for 4 weeks your VP/IP\\ to earn IP inflation}
+    &
+    \makecell{Need to stake your assets\\ 13 weeks to play the game} 
+    & 
+    \makecell{No staking, bandwidth and\\ voting power is generated off\\ the single liquid token}\\ \hline
+    \makecell{No staking, voting/influence power \\is generated based on\\ token, \\activity and reputation} 
+    &
+    \makecell{Wait 7 days to collect rewards} 
+    & 
+    \makecell{Instant rewards} \\ \hline
+    \makecell{Commitment to external\\ cause/donation} 
+    &
+    \makecell{No commitment} 
+    & 
+    \makecell{No commitment} \\ \hline
+    
+\end{tabular}
+\caption{\label{tab:widgets} }
+\end{center}
+  
+
+\section{Proof of Experience/Engagement - Blockchain basics}
+\subsection{Consensus algorithm}
+ Moment blocks in the moment chain are produced by the miner nodes. All miners are influencers but not all influencers are miners. Moment influencers who participate in the mining procedure are the participant nodes who seek for voting approval from moment users. 
+   Miner ranking = 1/2 * Approved MC + 1/2 * Influence Power based on reputation
+ This is where momentchain differentiates with hive, steem and avalon chain by weighting user reputation equally to monetary approval. Influencers who are contributive to the platform are more likely to have interest in the health of the platform rather than milking coins for trading.
+ Reputation is calculated based on prior engagement in content creation, curation and commenting.
+ Block creation interval is 2 seconds. Each block produces 2 Moment coins. Therefore, 60 moment coins get generated in an hour. 
+ 2/3 of 25 = 16 miner nodes need to have consensus to generate the next block. 25 miner nodes take turn every 2 seconds in a cycle to produce the blocks. Each participant node will have to announce their sync status
+ Every day, 1 special block is created with X amount of coins. (X - 2) coins are equally distributed to randomly chosen Y miners outside of the top 25 miner nodes. X is a function of the content, participation and contribution activity in the platform for that specific day. Y is random number chosen from the total number of secondary participant nodes.
+ 20 slots out of 25 nodes are fixed slots, 5 slots are partially transient slots. Every day, 5 out of primary 25 miner node is forced to become a secondary node and 5 participant nodes which haven't mined for last 5 days are randomly chosen. 
+ 
+  
+
+\section{Moment coin - Token economy and business model}
+\subsection{Supply & Initial allocation}
+
+\bibliographystyle{unsrt}
+\bibliography{reference}
+
+\end{document}

@@ -1,2 +1,0 @@
-{"file":"chain.go:8","func":"RunChain","level":"info","msg":"Running chain","time":"2022-01-06T17:49:19-06:00"}
-{"file":"http.go:11","func":"WhoAmI","level":"info","msg":"In WhoAmI","time":"2022-01-06T17:50:10-06:00"}
